@@ -9,7 +9,8 @@
    We have normalized the pixel values to the range 0 and 1 by dividing each value by the maximum of 255. Finally, the output variable is an integer from 0 to 9. To transform the vector of class integers into a binary matrix, we applied the built-in np_utils.to_categorical() helper function in Keras.
 
 5. Modelling –
-        i. kNN classifier: Modelling was done with default number of neighbours i.e. k=5. Accuracy is 96.88% Model evaluation is done by using classification report – precision, recall, f1-score.
+         
+        i. kNN classifier: Modelling was done with default number of neighbours i.e. k=5. Accuracy is 96.88% Model evaluation is done by                              using classification report – precision, recall, f1-score.
         
         ii. MLP classifier: Hypertuning parameters – (activation=&#39;relu&#39;, hidden_layer_sizes= (200, 200), alpha = 0.3) 
         
@@ -17,7 +18,7 @@
                               
                               Accuracy on testing score: 89.06%.
         
-        iii. MLP keras: We have used Sequential model for building the network. Added the Dense layer, ReLU activation function. The last layer is a softmax layer as it is a multiclass classification problem. we configured the optimizer to be adam. We specified the loss type which is categorical cross entropy and the metrics (accuracy in this case) which we want to track during the training process.
+        iii. MLP keras:  We have used Sequential model for building the network. Added the Dense layer, ReLU activation function. The last                          layer is a softmax layer as it is a multiclass classification problem. we configured the optimizer to be adam. We                          specified the loss type which is categorical cross entropy and the metrics (accuracy in this case) which we want                             to track during the training process.
         
                         We have used the data in the history object to plot the loss and accuracy curves to check how the training process went.
                         
